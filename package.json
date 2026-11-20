@@ -6,21 +6,48 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "contracts:compile": "hardhat compile",
+    "contracts:test": "hardhat test",
+    "contracts:deploy:local": "hardhat run contracts/scripts/deploy.ts",
+    "contracts:deploy:amoy": "hardhat run contracts/scripts/deploy.ts --network polygonAmoy"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.17",
+    "@radix-ui/react-slot": "^1.5.0",
+    "@radix-ui/react-switch": "^1.4.1",
+    "@radix-ui/react-tabs": "^1.2.1",
+    "@rainbow-me/rainbowkit": "^2.2.11",
+    "@tanstack/react-query": "^5.108.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "html5-qrcode": "^2.3.8",
+    "keccak256": "^1.0.6",
+    "lucide-react": "^1.76.0",
+    "lz-string": "^1.5.0",
+    "merkletreejs": "^0.6.0",
+    "next": "14.2.35",
+    "qrcode.react": "^4.2.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.35"
+    "sonner": "^2.0.8",
+    "tailwind-merge": "^3.7.0",
+    "viem": "^2.58.1",
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@types/lz-string": "^1.3.34",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "dotenv": "^18.0.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "hardhat": "^2.29.2",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.35"
+    "typescript": "^5"
   }
 }
